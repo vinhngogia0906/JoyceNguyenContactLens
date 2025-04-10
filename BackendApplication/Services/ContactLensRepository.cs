@@ -1,4 +1,5 @@
 ﻿using BackendApplication.Schema.Types;
+using BackendApplication.Services.Abstractions;
 using Dapper;
 using Npgsql;
 
@@ -33,7 +34,7 @@ namespace BackendApplication.Services
             return await connection.QuerySingleAsync<ContactLensType>(query, parameters);
 
         }
-        public async Task<Boolean> DeleteAsync(int id)
+        public async Task<Boolean> DeleteAsync(Guid id)
         {
             using var connection = new NpgsqlConnection(_connectionString);
             const string query = "DELETE FROM ContactLenses WHERE Id = @Id";
@@ -46,7 +47,7 @@ namespace BackendApplication.Services
             const string query = @"SELECT * FROM ""ContactLenses""";
             return await connection.QueryAsync<ContactLensType>(query);
         }
-        public async Task<ContactLensType?> GetByIdAsync(int id)
+        public async Task<ContactLensType?> GetByIdAsync(Guid id)
         {
             using var connection = new NpgsqlConnection(_connectionString);
             const string query = "SELECT * FROM ContactLenses WHERE Id = @Id";

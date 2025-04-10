@@ -1,5 +1,5 @@
 ﻿using BackendApplication.Schema.Types;
-using BackendApplication.Services;
+using BackendApplication.Services.Abstractions;
 
 namespace BackendApplication.Schema.Query
 {
