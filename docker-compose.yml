@@ -1,0 +1,42 @@
+version: '3.8'
+
+networks:
+  joycenguyenlens:
+    driver: bridge
+
+services:
+  backendapplication:
+    build:
+      context: ./BackendApplication
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - joycenguyenlensdb
+    networks:
+      - joycenguyenlens
+  
+  joycenguyenlensdb:
+    image: postgres:17
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: joycenguyenlens
+      POSTGRES_PASSWORD: supersecretpassword
+      POSTGRES_DB: contactlensdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U joycenguyenlens -d contactlensdb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - joycenguyenlens
+
+volumes:
+  postgres_data:
