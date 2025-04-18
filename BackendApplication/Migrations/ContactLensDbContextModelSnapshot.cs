@@ -113,6 +113,9 @@ namespace BackendApplication.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<bool>("IsAdmin")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("text");

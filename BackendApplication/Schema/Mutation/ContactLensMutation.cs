@@ -32,6 +32,69 @@ namespace BackendApplication.Schema.Mutation
             return await userRepository.Login(email, password);
 
         }
+        public async Task<bool> DeleteContactLens(
+            [Service] IContactLensRepository contactLensRepository,
+            Guid id)
+        {
+            return await contactLensRepository.DeleteAsync(id);
+        }
+        public async Task<bool> DeleteUser(
+            [Service] IUserRepository userRepository,
+            Guid id)
+        {
+            return await userRepository.DeleteAsync(id);
+        }
+
+        public async Task<User> UpdateUser(
+            [Service] IUserRepository userRepository,
+            User user)
+        {
+            return await userRepository.UpdateAsync(user);
+        }
+        public async Task<ContactLensType> UpdateContactLens(
+            [Service] IContactLensRepository contactLensRepository,
+            ContactLensType contactLens)
+        {
+            return await contactLensRepository.UpdateAsync(contactLens);
+        }
+
+        public async Task<Order> SubmitOrder(
+            [Service] IOrderRepository orderRepository,
+            Order order)
+        {
+            return await orderRepository.AddAsync(order);
+        }
+        public async Task<bool> DeleteOrder(
+            [Service] IOrderRepository orderRepository,
+            Guid id)
+        {
+            return await orderRepository.DeleteAsync(id);
+        }
+        public async Task<Order> UpdateOrder(
+            [Service] IOrderRepository orderRepository,
+            Order order)
+        {
+            return await orderRepository.UpdateAsync(order);
+        }
+        public async Task<Address> AddAddress(
+            [Service] IAddressRepository addressRepository,
+            Address address)
+        {
+            return await addressRepository.AddAsync(address);
+        }
+        public async Task<bool> DeleteAddress(
+            [Service] IAddressRepository addressRepository,
+            Guid id)
+        {
+            return await addressRepository.DeleteAsync(id);
+        }
+
+        public async Task<Address> UpdateAddress(
+            [Service] IAddressRepository addressRepository,
+            Address address)
+        {
+            return await addressRepository.UpdateAsync(address);
+        }
 
     }
 }
