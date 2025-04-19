@@ -57,7 +57,7 @@ namespace BackendApplication.Services
         public async Task<ContactLensType?> GetByIdAsync(Guid id)
         {
             using var connection = new NpgsqlConnection(_connectionString);
-            const string query = "SELECT * FROM ContactLenses WHERE Id = @Id";
+            const string query = @"SELECT * FROM ""ContactLenses"" WHERE ""Id"" = @Id";
             return await connection.QuerySingleOrDefaultAsync<ContactLensType>(query, new { Id = id });
         }
         public async Task<ContactLensType> UpdateAsync(ContactLensType contactLens)
