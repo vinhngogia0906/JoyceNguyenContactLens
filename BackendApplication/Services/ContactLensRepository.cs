@@ -47,10 +47,17 @@ namespace BackendApplication.Services
             const string query = @"SELECT * FROM ""ContactLenses""";
             return await connection.QueryAsync<ContactLensType>(query);
         }
+
+        public async Task<IEnumerable<ContactLensType>> GetByColorAsync(string color)
+        {
+            using var connection = new NpgsqlConnection(_connectionString);
+            const string query = @"SELECT * FROM ""ContactLenses"" WHERE ""Color"" = @Color";
+            return await connection.QueryAsync<ContactLensType>(query);
+        }
         public async Task<ContactLensType?> GetByIdAsync(Guid id)
         {
             using var connection = new NpgsqlConnection(_connectionString);
-            const string query = "SELECT * FROM ContactLenses WHERE Id = @Id";
+            const string query = @"SELECT * FROM ""ContactLenses"" WHERE ""Id"" = @Id";
             return await connection.QuerySingleOrDefaultAsync<ContactLensType>(query, new { Id = id });
         }
         public async Task<ContactLensType> UpdateAsync(ContactLensType contactLens)

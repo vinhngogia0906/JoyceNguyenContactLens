@@ -47,6 +47,13 @@ namespace BackendApplication.Services
             return await connection.QueryAsync<Order>(query);
         }
 
+        public async Task<IEnumerable<Order>> GetByUserIdAsync(Guid userId)
+        {
+            using var connection = new Npgsql.NpgsqlConnection(_connectionString);
+            const string query = @"SELECT * FROM ""Orders"" WHERE ""UserId"" = @UserId";
+            return await connection.QueryAsync<Order>(query, new { UserId = userId });
+        }
+
         public async Task<Order?> GetByIdAsync(Guid id)
         {
             using var connection = new Npgsql.NpgsqlConnection(_connectionString);

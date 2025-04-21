@@ -26,14 +26,15 @@ namespace BackendApplication.Services
                 FirstName = userRegisterRequest.FirstName,
                 LastName = userRegisterRequest.LastName,
                 Email = userRegisterRequest.Email,
+                IsAdmin = false,
                 PasswordHash = passwordHash,
                 Addresses = new List<Address>(),
                 Orders = new List<Order>()
             };
             using var connection = new Npgsql.NpgsqlConnection(_connectionString);
             const string query = @"
-                INSERT INTO ""Users"" (""Id"", ""FirstName"", ""LastName"", ""Email"", ""PasswordHash"") 
-                VALUES (@Id, @FirstName, @LastName, @Email, @PasswordHash)
+                INSERT INTO ""Users"" (""Id"", ""FirstName"", ""LastName"", ""Email"", ""PasswordHash"", ""IsAdmin"") 
+                VALUES (@Id, @FirstName, @LastName, @Email, @PasswordHash, @IsAdmin)
                 RETURNING *";
             return await connection.QuerySingleAsync<User>(query, parameters);
         }
