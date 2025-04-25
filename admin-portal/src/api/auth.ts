@@ -1,11 +1,11 @@
 import env from "../environment";
 import client from "./graphql/client";
-import { LOGIN } from "./graphql/mutations";
+import { ADMINLOGIN } from "./graphql/mutations";
 
 export const AuthService = {
   login: async (email: string, password: string): Promise<string> => {
     const {data} = await client.mutate({
-      mutation: LOGIN,
+      mutation: ADMINLOGIN,
       variables: { email, password }
     });
 

@@ -35,6 +35,15 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
 builder.Services.AddGraphQLServer()
     .AddQueryType<ContactLensQuery>()
@@ -54,6 +63,7 @@ if (app.Environment.IsDevelopment())
     dbContext.Database.Migrate();
 }
 
+app.UseCors("AllowAllOrigins");
 app.UseRouting();
 
 app.UseEndpoints(endpoints =>

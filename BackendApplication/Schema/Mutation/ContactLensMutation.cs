@@ -32,6 +32,15 @@ namespace BackendApplication.Schema.Mutation
             return await userRepository.Login(email, password);
 
         }
+
+        public async Task<string> AdminLogin(
+            [Service] IUserRepository userRepository,
+            string email,
+            string password)
+        {
+            return await userRepository.AdminLogin(email, password);
+
+        }
         public async Task<bool> DeleteContactLens(
             [Service] IContactLensRepository contactLensRepository,
             Guid id)

@@ -18,6 +18,19 @@ services:
       - joycenguyenlensdb
     networks:
       - joycenguyenlens
+
+  adminportal:
+    build:
+      context: ./admin-portal
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+    networks:
+      - joycenguyenlens
+    depends_on:
+      - backendapplication
   
   joycenguyenlensdb:
     image: postgres:17

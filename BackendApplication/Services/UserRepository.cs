@@ -55,6 +55,27 @@ namespace BackendApplication.Services
             }
         }
 
+        public async Task<string> AdminLogin(string email, string password)
+        {
+            var user = await GetByEmailAsync(email);
+            if (user == null)
+            {
+                throw new Exception("Invalid email or password");
+            }
+            else if (new PasswordHasher<User>().VerifyHashedPassword(user, user.PasswordHash, password) == PasswordVerificationResult.Failed)
+            {
+                throw new Exception("Invalid email or password");
+            }
+            else if (!user.IsAdmin)
+            {
+                throw new Exception("User is not an admin");
+            }
+            else
+            {
+                return _tokenGenerator.GenerateToken(email, new PasswordHasher<User>().HashPassword(null, password));
+            }
+        }
+
         public async Task<bool> DeleteAsync(Guid id)
         {
             using var connection = new Npgsql.NpgsqlConnection(_connectionString);
