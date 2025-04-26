@@ -9,6 +9,7 @@
         public decimal Price { get; set; }
         public int Quantity { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public ICollection<string> ImageUrls { get; set; } = new List<string>();
 
     }
 }

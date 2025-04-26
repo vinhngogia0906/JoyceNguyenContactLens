@@ -2,13 +2,8 @@ import { useQuery } from "@apollo/client";
 import { GET_ORDERS } from "../../api/graphql/queries";
 import { Box, Container, Typography, CircularProgress, Alert, TableContainer, Paper, Table, TableHead, TableRow, TableCell, TableBody } from "@mui/material";
 import NavBar from "../../components/common/NavigationBar";
-import { UUID } from "crypto";
+import { Order } from "../../api/types";
 
-interface Order {
-  id: UUID,
-  orderDate: Date,
-  totalPrice: number
-}
 
 const ManageOrders: React.FC = () => {
   const {loading, error, data } = useQuery(GET_ORDERS);

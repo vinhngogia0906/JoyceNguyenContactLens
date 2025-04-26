@@ -18,8 +18,6 @@ const App: React.FC = () => {
             <Route path="/dashboard" element={<Dashboard />}/>
             <Route path="/products" element={<ManageProducts />} />
             <Route path="/orders" element={<ManageOrders />} />
-              {/* <Route index element={<ManageProducts />} /> */}
-
           </Route>
           <Route path="*" element={<Navigate to="/login" replace />} />
         </Routes>

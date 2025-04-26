@@ -2,12 +2,15 @@
 using BackendApplication.Schema.Types;
 using BackendApplication.Services.Abstractions;
 using Microsoft.AspNetCore.Identity;
+using Path = System.IO.Path;
 
 namespace BackendApplication.Schema.Mutation
 {
     public class ContactLensMutation
     {
         private readonly TokenGenerator _tokenGenerator;
+        private readonly IConfiguration _configuration;
+        private string DEFAULT_IMAGE_PATH = "D:/JoyceNguyenContactLens/imageUploads";
         public async Task<ContactLensType> AddContactLens(
             [Service] IContactLensRepository contactLensRepository,
             ContactLensRequest contactLensRequest)
@@ -62,9 +65,28 @@ namespace BackendApplication.Schema.Mutation
         }
         public async Task<ContactLensType> UpdateContactLens(
             [Service] IContactLensRepository contactLensRepository,
-            ContactLensType contactLens)
+            Guid id,
+            ContactLensRequest contactLensRequest)
         {
-            return await contactLensRepository.UpdateAsync(contactLens);
+            try
+            {
+                var contactLens = await contactLensRepository.GetByIdAsync(id);
+                if (contactLens == null)
+                {
+                    throw new Exception("Contact lens not found");
+                }
+                contactLens.Name = contactLensRequest.Name;
+                contactLens.Color = contactLensRequest.Color;
+                contactLens.Degree = contactLensRequest.Degree;
+                contactLens.Price = contactLensRequest.Price;
+                contactLens.Quantity = contactLensRequest.Quantity;
+                return await contactLensRepository.UpdateAsync(contactLens);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error updating contact lens: {ex.Message}");
+            }
+            
         }
 
         public async Task<Order> SubmitOrder(
@@ -103,6 +125,48 @@ namespace BackendApplication.Schema.Mutation
             Address address)
         {
             return await addressRepository.UpdateAsync(address);
+        }
+
+        public async Task<bool> AddContactLensImage(
+            [Service] IContactLensRepository contactLensRepository,
+            Guid contactLensId,
+            IFile imageFile)
+        {
+            var filePath = Path.Combine(_configuration.GetValue<string>("UploadPath") ?? DEFAULT_IMAGE_PATH, $"{contactLensId}_{imageFile.Name}");
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await imageFile.CopyToAsync(stream);
+            }
+
+            var imageUrl = filePath.Replace("D:/JoyceNguyenContactLens", "").Replace("\\", "/");
+            return await contactLensRepository.AddImageAsync(contactLensId, imageUrl);
+        }
+
+        public async Task<bool> ReplaceContactLensImages(
+            [Service] IContactLensRepository contactLensRepository,
+            Guid contactLensId,
+            IEnumerable<IFile> imageFiles)
+        {
+            var imageUrls = new List<string>();
+            foreach (var imageFile in imageFiles)
+            {
+                var filePath = Path.Combine(_configuration.GetValue<string>("UploadPath") ?? DEFAULT_IMAGE_PATH, $"{Guid.NewGuid()}_{imageFile.Name}");
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+                imageUrls.Add(filePath.Replace("D:/JoyceNguyenContactLens", "").Replace("\\", "/"));
+            }
+
+            return await contactLensRepository.ReplaceImagesAsync(contactLensId, imageUrls);
+        }
+
+        public async Task<bool> RemoveContactLensImage(
+            [Service] IContactLensRepository contactLensRepository,
+            Guid contactLensId,
+            string imageUrl)
+        {
+            return await contactLensRepository.RemoveImageAsync(contactLensId, imageUrl);
         }
 
     }

@@ -48,7 +48,7 @@ builder.Services.AddCors(options =>
 builder.Services.AddGraphQLServer()
     .AddQueryType<ContactLensQuery>()
     .AddMutationType<ContactLensMutation>()
-    ;
+    .AddType<UploadType>();
 
 var app = builder.Build();
 // Add middleware

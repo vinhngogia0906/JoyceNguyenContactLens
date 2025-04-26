@@ -1,17 +1,9 @@
 import { useQuery } from "@apollo/client";
 import { Alert, Box, CircularProgress, Container, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
-import { UUID } from "crypto";
 import { GET_CONTACT_LENS } from "../../api/graphql/queries";
 import NavBar from "../../components/common/NavigationBar";
+import { ContactLens } from "../../api/types";
 
-export interface ContactLens {
-  id: UUID,
-  name: string,
-  color: string,
-  degree: number,
-  price: number,
-  quantity: number
-}
 const Dashboard: React.FC = () => {
   const {loading, error, data } = useQuery(GET_CONTACT_LENS);
 
