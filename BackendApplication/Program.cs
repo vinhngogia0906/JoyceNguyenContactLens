@@ -35,11 +35,20 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddAuthorization();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
 
 builder.Services.AddGraphQLServer()
     .AddQueryType<ContactLensQuery>()
     .AddMutationType<ContactLensMutation>()
-    ;
+    .AddType<UploadType>();
 
 var app = builder.Build();
 // Add middleware
@@ -54,6 +63,7 @@ if (app.Environment.IsDevelopment())
     dbContext.Database.Migrate();
 }
 
+app.UseCors("AllowAllOrigins");
 app.UseRouting();
 
 app.UseEndpoints(endpoints =>

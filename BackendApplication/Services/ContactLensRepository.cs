@@ -23,13 +23,14 @@ namespace BackendApplication.Services
                 Color = contactLensRequest.Color,
                 Degree = contactLensRequest.Degree,
                 Price = contactLensRequest.Price,
-                Quantity = contactLensRequest.Quantity
+                Quantity = contactLensRequest.Quantity,
+                ImageUrls = new string[0]
             };
 
             using var connection = new NpgsqlConnection(_connectionString);
             const string query = @"
-                INSERT INTO ""ContactLenses"" (""Id"", ""Name"", ""Color"", ""Degree"", ""Price"", ""Quantity"") 
-                VALUES (@Id, @Name, @Color, @Degree, @Price, @Quantity)
+                INSERT INTO ""ContactLenses"" (""Id"", ""Name"", ""Color"", ""Degree"", ""Price"", ""Quantity"", ""ImageUrls"") 
+                VALUES (@Id, @Name, @Color, @Degree, @Price, @Quantity, @ImageUrls)
                 RETURNING *";
             return await connection.QuerySingleAsync<ContactLensType>(query, parameters);
 
@@ -64,12 +65,45 @@ namespace BackendApplication.Services
         {
             using var connection = new NpgsqlConnection(_connectionString);
             const string query = @"
-                UPDATE ContactLenses 
-                SET Name = @Name, Color = @Color, Degree = @Degree, Price = @Price, Quantity = @Quantity
-                WHERE Id = @Id
+                UPDATE ""ContactLenses"" 
+                SET ""Name"" = @Name, ""Color"" = @Color, ""Degree"" = @Degree, ""Price"" = @Price, ""Quantity"" = @Quantity, ""ImageUrls"" = @ImageUrls
+                WHERE ""Id"" = @Id
                 RETURNING *";
             return await connection.QuerySingleAsync<ContactLensType>(query, contactLens);
 
+        }
+
+        public async Task<bool> AddImageAsync(Guid contactLensId, string imageUrl)
+        {
+            using var connection = new NpgsqlConnection(_connectionString);
+            const string query = @"
+        UPDATE ""ContactLenses""
+        SET ""ImageUrls"" = array_append(""ImageUrls"", @ImageUrl)
+        WHERE ""Id"" = @ContactLensId";
+            var rowsAffected = await connection.ExecuteAsync(query, new { ContactLensId = contactLensId, ImageUrl = imageUrl });
+            return rowsAffected > 0;
+        }
+
+        public async Task<bool> ReplaceImagesAsync(Guid contactLensId, IEnumerable<string> imageUrls)
+        {
+            using var connection = new NpgsqlConnection(_connectionString);
+            const string query = @"
+        UPDATE ""ContactLenses""
+        SET ""ImageUrls"" = @ImageUrls
+        WHERE ""Id"" = @ContactLensId";
+            var rowsAffected = await connection.ExecuteAsync(query, new { ContactLensId = contactLensId, ImageUrls = imageUrls.ToArray() });
+            return rowsAffected > 0;
+        }
+
+        public async Task<bool> RemoveImageAsync(Guid contactLensId, string imageUrl)
+        {
+            using var connection = new NpgsqlConnection(_connectionString);
+            const string query = @"
+        UPDATE ""ContactLenses""
+        SET ""ImageUrls"" = array_remove(""ImageUrls"", @ImageUrl)
+        WHERE ""Id"" = @ContactLensId";
+            var rowsAffected = await connection.ExecuteAsync(query, new { ContactLensId = contactLensId, ImageUrl = imageUrl });
+            return rowsAffected > 0;
         }
     }
 }

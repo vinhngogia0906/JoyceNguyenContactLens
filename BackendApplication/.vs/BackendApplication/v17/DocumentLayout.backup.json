@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "D:\\JoyceNguyenContactLens\\BackendApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\contactlensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\contactlensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\query\\contactlensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\query\\contactlensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\data\\contactlensdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:data\\contactlensdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\mutation\\contactlensmutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\mutation\\contactlensmutation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\contactlensrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\contactlensrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\abstractions\\icontactlensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\abstractions\\icontactlensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\contactlensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\contactlensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\contactlenstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\contactlenstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\abstractions\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\abstractions\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\query\\contactlensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\query\\contactlensquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,20 +79,12 @@
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\addressrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\userregisterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\userregisterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\helper\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:helper\\tokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\services\\abstractions\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\abstractions\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\backendapplication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -83,16 +95,8 @@
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:services\\orderitemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\contactlensrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\contactlensrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\data\\contactlensdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:data\\contactlensdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\migrations\\contactlensdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\migrations\\20250408144344_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:migrations\\20250408144344_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\contactlenstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|solutionrelative:schema\\types\\contactlenstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E3BF06FA-BA0B-45A6-B878-8D4BF7BB5BE5}|BackendApplication.csproj|d:\\joycenguyencontactlens\\backendapplication\\schema\\types\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,23 +126,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "ContactLensMutation.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Mutation\\ContactLensMutation.cs",
               "RelativeDocumentMoniker": "Schema\\Mutation\\ContactLensMutation.cs",
               "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Mutation\\ContactLensMutation.cs",
               "RelativeToolTip": "Schema\\Mutation\\ContactLensMutation.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAgwGEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAWwEUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:06:35.958Z"
+              "WhenOpened": "2025-04-08T14:06:35.958Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "IContactLensRepository.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IContactLensRepository.cs",
+              "RelativeDocumentMoniker": "Services\\Abstractions\\IContactLensRepository.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IContactLensRepository.cs",
+              "RelativeToolTip": "Services\\Abstractions\\IContactLensRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T13:48:05.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactLensRepository.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\ContactLensRepository.cs",
+              "RelativeDocumentMoniker": "Services\\ContactLensRepository.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\ContactLensRepository.cs",
+              "RelativeToolTip": "Services\\ContactLensRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAcwDgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-18T13:45:21.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactLensRequest.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensRequest.cs",
+              "RelativeDocumentMoniker": "Schema\\Types\\ContactLensRequest.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensRequest.cs",
+              "RelativeToolTip": "Schema\\Types\\ContactLensRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T15:26:28.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -150,24 +190,76 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T14:12:34.7Z"
+              "WhenOpened": "2025-04-08T14:12:34.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T13:46:59.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ContactLensDbContext.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Data\\ContactLensDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ContactLensDbContext.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Data\\ContactLensDbContext.cs",
+              "RelativeToolTip": "Data\\ContactLensDbContext.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAmwCYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T14:33:35.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-08T14:12:31.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "ContactLensType.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensType.cs",
+              "RelativeDocumentMoniker": "Schema\\Types\\ContactLensType.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensType.cs",
+              "RelativeToolTip": "Schema\\Types\\ContactLensType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T14:01:41.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ContactLensQuery.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Query\\ContactLensQuery.cs",
+              "RelativeDocumentMoniker": "Schema\\Query\\ContactLensQuery.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Query\\ContactLensQuery.cs",
+              "RelativeToolTip": "Schema\\Query\\ContactLensQuery.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAtwBgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T13:57:07.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\User.cs",
               "RelativeDocumentMoniker": "Schema\\Types\\User.cs",
@@ -179,7 +271,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "Services\\Abstractions\\IOrderRepository.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IOrderRepository.cs",
+              "RelativeToolTip": "Services\\Abstractions\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T14:25:11.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\OrderRepository.cs",
               "RelativeDocumentMoniker": "Services\\OrderRepository.cs",
@@ -192,18 +296,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "IOrderRepository.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IOrderRepository.cs",
-              "RelativeDocumentMoniker": "Services\\Abstractions\\IOrderRepository.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IOrderRepository.cs",
-              "RelativeToolTip": "Services\\Abstractions\\IOrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Services\\UserRepository.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\UserRepository.cs",
+              "RelativeToolTip": "Services\\UserRepository.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAuwEwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T14:25:11.122Z"
+              "WhenOpened": "2025-04-09T14:28:12.447Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Services\\Abstractions\\IUserRepository.cs",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IUserRepository.cs",
+              "RelativeToolTip": "Services\\Abstractions\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T14:24:52.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "Order.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\Order.cs",
               "RelativeDocumentMoniker": "Schema\\Types\\Order.cs",
@@ -215,56 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAuwDQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T13:46:59.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IContactLensRepository.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IContactLensRepository.cs",
-              "RelativeDocumentMoniker": "Services\\Abstractions\\IContactLensRepository.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IContactLensRepository.cs",
-              "RelativeToolTip": "Services\\Abstractions\\IContactLensRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T13:48:05.231Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ContactLensRepository.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\ContactLensRepository.cs",
-              "RelativeDocumentMoniker": "Services\\ContactLensRepository.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\ContactLensRepository.cs",
-              "RelativeToolTip": "Services\\ContactLensRepository.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowAcAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T13:45:21.615Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ContactLensQuery.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Query\\ContactLensQuery.cs",
-              "RelativeDocumentMoniker": "Schema\\Query\\ContactLensQuery.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Query\\ContactLensQuery.cs",
-              "RelativeToolTip": "Schema\\Query\\ContactLensQuery.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAASwBgAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T13:57:07.185Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "IOrderItemRepository.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IOrderItemRepository.cs",
               "RelativeDocumentMoniker": "Services\\Abstractions\\IOrderItemRepository.cs",
@@ -276,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "IAddressRepository.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IAddressRepository.cs",
               "RelativeDocumentMoniker": "Services\\Abstractions\\IAddressRepository.cs",
@@ -288,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "AddressRepository.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\AddressRepository.cs",
               "RelativeDocumentMoniker": "Services\\AddressRepository.cs",
@@ -300,19 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\UserRepository.cs",
-              "RelativeDocumentMoniker": "Services\\UserRepository.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\UserRepository.cs",
-              "RelativeToolTip": "Services\\UserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T14:28:12.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "UserRegisterRequest.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\UserRegisterRequest.cs",
               "RelativeDocumentMoniker": "Schema\\Types\\UserRegisterRequest.cs",
@@ -324,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "TokenGenerator.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Helper\\TokenGenerator.cs",
               "RelativeDocumentMoniker": "Helper\\TokenGenerator.cs",
@@ -336,19 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "Services\\Abstractions\\IUserRepository.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\Abstractions\\IUserRepository.cs",
-              "RelativeToolTip": "Services\\Abstractions\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T14:24:52.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "OrderItemRepository.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Services\\OrderItemRepository.cs",
               "RelativeDocumentMoniker": "Services\\OrderItemRepository.cs",
@@ -360,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "BackendApplication.csproj",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\BackendApplication.csproj",
               "RelativeDocumentMoniker": "BackendApplication.csproj",
@@ -372,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "Address.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\Address.cs",
               "RelativeDocumentMoniker": "Schema\\Types\\Address.cs",
@@ -384,31 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ContactLensRequest.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensRequest.cs",
-              "RelativeDocumentMoniker": "Schema\\Types\\ContactLensRequest.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensRequest.cs",
-              "RelativeToolTip": "Schema\\Types\\ContactLensRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:26:28.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ContactLensDbContext.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Data\\ContactLensDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ContactLensDbContext.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Data\\ContactLensDbContext.cs",
-              "RelativeToolTip": "Data\\ContactLensDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:33:35.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ContactLensDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Migrations\\ContactLensDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\ContactLensDbContextModelSnapshot.cs",
@@ -420,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "20250408144344_InitialCreate.cs",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Migrations\\20250408144344_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20250408144344_InitialCreate.cs",
@@ -429,18 +449,6 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAqwBsAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-08T15:51:01.654Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ContactLensType.cs",
-              "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensType.cs",
-              "RelativeDocumentMoniker": "Schema\\Types\\ContactLensType.cs",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\Schema\\Types\\ContactLensType.cs",
-              "RelativeToolTip": "Schema\\Types\\ContactLensType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:01:41.792Z"
             },
             {
               "$type": "Document",

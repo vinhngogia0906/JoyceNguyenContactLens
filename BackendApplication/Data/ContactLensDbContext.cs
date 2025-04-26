@@ -38,6 +38,11 @@ namespace BackendApplication.Data
                 .WithMany(cl => cl.OrderItems)
                 .HasForeignKey(oi => oi.ContactLensTypeId);
 
+            modelBuilder.Entity<ContactLensType>()
+            .Property(cl => cl.ImageUrls)
+            .HasConversion(
+                v => string.Join(",", v), // Convert list to a comma-separated string
+                v => v.Split(",", StringSplitOptions.RemoveEmptyEntries).ToList()); // Convert string back to list
         }
     }
 }

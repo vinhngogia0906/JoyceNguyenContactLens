@@ -25,3 +25,14 @@ export const GET_CONTACT_LENS_BY_ID = gql`
     }
   }
 `;
+
+
+export const GET_ORDERS = gql`
+  query GetAllOrders {
+    allOrders {
+        id
+        orderDate
+        totalPrice  
+    }
+  }
+`;

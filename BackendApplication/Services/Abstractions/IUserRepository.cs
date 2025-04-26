@@ -11,5 +11,6 @@ namespace BackendApplication.Services.Abstractions
         Task<User> UpdateAsync(User user);
         Task<bool> DeleteAsync(Guid id);
         Task<string> Login(string email, string password);
+        Task<string> AdminLogin(string email, string password);
     }
 }
