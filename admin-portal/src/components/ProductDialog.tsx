@@ -12,6 +12,7 @@ interface ProductDialogProps {
   product: ContactLens;
   onClose: () => void;
   onProductUpdated: (updatedProduct: any) => void;
+  onSelectedProductRefresh: (product: ContactLens) => void;
 }
 
 const ProductDialog: React.FC<ProductDialogProps> = ({ 

@@ -36,6 +36,10 @@ const ManageProducts = () => {
     setSelectedProduct(newProduct);
   };
 
+  const handleSelectedProductRefresh = (newProduct: ContactLens) => {
+    setSelectedProduct(new)
+  }
+
   if (loading) return <CircularProgress />;
   if (error) return <Typography color="error">Error loading products</Typography>;
 
@@ -60,6 +64,7 @@ const ManageProducts = () => {
               onClick={() => {
                 setSelectedProduct(lens);
                 setOpenProductDialog(true);
+                console.log("Selected Products: ", selectedProduct);
               }}
             >
               {/* {lens.thumbnail && (
@@ -99,6 +104,7 @@ const ManageProducts = () => {
         product={selectedProduct}
         onClose={() => setOpenProductDialog(false)}
         onProductUpdated={handleProductCreated}
+        onSelectedProductRefresh={}
       />
     </Box>
   );

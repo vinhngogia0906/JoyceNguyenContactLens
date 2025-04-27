@@ -138,8 +138,7 @@
               "RelativeToolTip": "Services\\Abstractions\\IContactLensRepository.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T13:48:05.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T13:48:05.231Z"
             },
             {
               "$type": "Document",
@@ -151,8 +150,7 @@
               "RelativeToolTip": "Services\\ContactLensRepository.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAcwEEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-18T13:45:21.615Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-18T13:45:21.615Z"
             },
             {
               "$type": "Document",
@@ -164,8 +162,7 @@
               "RelativeToolTip": "Schema\\Types\\ContactLensRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T15:26:28.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T15:26:28.045Z"
             },
             {
               "$type": "Document",
@@ -177,8 +174,7 @@
               "RelativeToolTip": "appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-08T14:12:34.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T14:12:34.7Z"
             },
             {
               "$type": "Document",
@@ -190,8 +186,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAAADIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T13:46:59.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T13:46:59.475Z"
             },
             {
               "$type": "Document",
@@ -203,8 +198,7 @@
               "RelativeToolTip": "Data\\ContactLensDbContext.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAmwCYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:33:35.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T14:33:35.414Z"
             },
             {
               "$type": "Document",
@@ -212,9 +206,9 @@
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\JoyceNguyenContactLens\\BackendApplication\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\appsettings.json*",
-              "RelativeToolTip": "appsettings.json*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "ToolTip": "D:\\JoyceNguyenContactLens\\BackendApplication\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-08T14:12:31.809Z",
               "EditorCaption": ""
@@ -229,8 +223,7 @@
               "RelativeToolTip": "Schema\\Mutation\\ContactLensMutation.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAWwFIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:06:35.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T14:06:35.958Z"
             },
             {
               "$type": "Document",
@@ -242,8 +235,7 @@
               "RelativeToolTip": "Schema\\Types\\ContactLensType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-08T14:01:41.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-08T14:01:41.792Z"
             },
             {
               "$type": "Document",
@@ -303,8 +295,7 @@
               "RelativeToolTip": "Services\\UserRepository.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAuwEwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T14:28:12.447Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-09T14:28:12.447Z"
             },
             {
               "$type": "Document",
