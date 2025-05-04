@@ -10,7 +10,7 @@ namespace BackendApplication.Services.Abstractions
         Task<ContactLensType> AddAsync(ContactLensRequest contactLensRequest);
         Task<ContactLensType> UpdateAsync(ContactLensType contactLens);
         Task<bool> DeleteAsync(Guid id);
-        Task<bool> AddImageAsync(Guid contactLensId, string imageUrl);
+        Task<bool> AddImageAsync(Guid contactLensId, IFile imageFile);
         Task<bool> ReplaceImagesAsync(Guid contactLensId, IEnumerable<string> imageUrls);
         Task<bool> RemoveImageAsync(Guid contactLensId, string imageUrl);
 

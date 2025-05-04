@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ADD_CONTACT_LENS_IMAGE, UPDATE_CONTACT_LENS } from "../api/graphql/mutations";
 import { useMutation } from "@apollo/client";
 import { Box, Button, Chip, CircularProgress, Dialog, DialogActions, DialogContent, DialogTitle, Tab, Tabs, TextField, Typography } from "@mui/material";
 import { TabContext, TabPanel } from "@mui/lab";
 import UploadIcon from '@mui/icons-material/Upload';
-import { UUID } from "crypto";
+import SaveIcon from '@mui/icons-material/Save';
 import { ContactLens } from "../api/types";
+import { GET_CONTACT_LENS } from "../api/graphql/queries";
 
 interface ProductDialogProps {
   open: boolean;
   product: ContactLens;
   onClose: () => void;
   onProductUpdated: (updatedProduct: any) => void;
-  onSelectedProductRefresh: (product: ContactLens) => void;
 }
 
 const ProductDialog: React.FC<ProductDialogProps> = ({ 
@@ -30,8 +30,28 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
     quantity: product.quantity.toString()
   });
   const [uploading, setUploading] = useState(false);
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   const [updateProduct] = useMutation(UPDATE_CONTACT_LENS);
-  const [addImage] = useMutation(ADD_CONTACT_LENS_IMAGE);
+  const [addImage] = useMutation(ADD_CONTACT_LENS_IMAGE, {
+    refetchQueries: [{ query: GET_CONTACT_LENS }],
+    context: {
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      }
+    }
+  });
+
+  useEffect(() => {
+    if(product) {
+      setFormData({
+        name: product.name,
+        color: product.color,
+        degree: product.degree.toString(),
+        price: product.price.toString(),
+        quantity: product.quantity.toString()
+      })
+    }
+  }, [product]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -58,14 +78,19 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
     }
   };
 
-  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileSelection = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files || files.length === 0) return;
+    setSelectedFiles(Array.from(files));
+  };
+
+  const handleSaveImages = async () => {
+    if (selectedFiles.length === 0) return;
 
     setUploading(true);
     try {
       await Promise.all(
-        Array.from(files).map(file => 
+        selectedFiles.map(file => 
           addImage({
             variables: {
               id: product.id,
@@ -74,6 +99,8 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
           })
         )
       );
+      setSelectedFiles([]);
+      onProductUpdated(product);
     } catch (error) {
       console.error("Error uploading images:", error);
     } finally {
@@ -147,6 +174,13 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
               onChange={handleChange}
               required
             />
+            <Button 
+              onClick={handleSubmit} 
+              color="primary" 
+              variant="contained"
+            >
+              Save Changes
+            </Button>
           </TabPanel>
 
           <TabPanel value="images">
@@ -157,7 +191,7 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
                 id="product-image-upload"
                 type="file"
                 multiple
-                onChange={handleImageUpload}
+                onChange={handleFileSelection}
               />
               <label htmlFor="product-image-upload">
                 <Button
@@ -169,6 +203,16 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
                   {uploading ? <CircularProgress size={24} /> : 'Upload Images'}
                 </Button>
               </label>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={handleSaveImages}
+                disabled={uploading || selectedFiles.length === 0}
+                startIcon={uploading ? <CircularProgress size={24}/> : <SaveIcon/>}
+                sx={{ml:2}}
+              >
+                Save Images
+              </Button>
               <Typography variant="body2" sx={{ mt: 1 }}>
                 You can upload multiple images at once
               </Typography>
@@ -220,13 +264,6 @@ const ProductDialog: React.FC<ProductDialogProps> = ({
       </DialogContent>
       <DialogActions>
         <Button onClick={onClose}>Cancel</Button>
-        <Button 
-          onClick={handleSubmit} 
-          color="primary" 
-          variant="contained"
-        >
-          Save Changes
-        </Button>
       </DialogActions>
     </Dialog>
   );

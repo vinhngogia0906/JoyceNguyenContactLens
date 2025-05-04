@@ -4,6 +4,7 @@ using BackendApplication.Schema.Mutation;
 using BackendApplication.Schema.Query;
 using BackendApplication.Services;
 using BackendApplication.Services.Abstractions;
+using HotChocolate.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -41,7 +42,8 @@ builder.Services.AddCors(options =>
     {
         policy.AllowAnyOrigin()
             .AllowAnyMethod()
-            .AllowAnyHeader();
+            .AllowAnyHeader()
+            .WithExposedHeaders("Apollo-Require-Preflight");
     });
 });
 
@@ -64,11 +66,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowAllOrigins");
+app.UseStaticFiles();
 app.UseRouting();
 
 app.UseEndpoints(endpoints =>
 {
-    endpoints.MapGraphQL();
+    endpoints.MapGraphQL()
+     .WithOptions(new GraphQLServerOptions
+     {
+         EnableMultipartRequests = true, // This enables file uploads
+         AllowedGetOperations = AllowedGetOperations.QueryAndMutation
+     });
 });
 
 

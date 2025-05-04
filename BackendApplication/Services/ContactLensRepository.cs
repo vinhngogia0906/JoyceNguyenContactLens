@@ -1,6 +1,7 @@
 ﻿using BackendApplication.Schema.Types;
 using BackendApplication.Services.Abstractions;
 using Dapper;
+using Microsoft.Extensions.Configuration;
 using Npgsql;
 
 namespace BackendApplication.Services
@@ -8,9 +9,11 @@ namespace BackendApplication.Services
     public class ContactLensRepository : IContactLensRepository
     {
         private readonly string _connectionString;
+        private readonly string _uploadPath;
         public ContactLensRepository(IConfiguration configuration)
         {
             _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _uploadPath = configuration.GetValue<string>("UploadPath");
         }
         public async Task<ContactLensType> AddAsync(ContactLensRequest contactLensRequest)
         {
@@ -73,8 +76,16 @@ namespace BackendApplication.Services
 
         }
 
-        public async Task<bool> AddImageAsync(Guid contactLensId, string imageUrl)
+        public async Task<bool> AddImageAsync(Guid contactLensId, IFile imageFile)
         {
+            var filePath = System.IO.Path.Combine(_uploadPath, $"{contactLensId}_{imageFile.Name}");
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await imageFile.CopyToAsync(stream);
+            }
+
+            var imageUrl = filePath.Replace("D:/JoyceNguyenContactLens", "").Replace("\\", "/");
+
             using var connection = new NpgsqlConnection(_connectionString);
             const string query = @"
         UPDATE ""ContactLenses""

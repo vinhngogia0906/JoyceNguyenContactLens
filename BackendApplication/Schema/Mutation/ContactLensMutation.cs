@@ -128,18 +128,12 @@ namespace BackendApplication.Schema.Mutation
         }
 
         public async Task<bool> AddContactLensImage(
+            IConfiguration configuration,
             [Service] IContactLensRepository contactLensRepository,
             Guid contactLensId,
             IFile imageFile)
         {
-            var filePath = Path.Combine(_configuration.GetValue<string>("UploadPath") ?? DEFAULT_IMAGE_PATH, $"{contactLensId}_{imageFile.Name}");
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                await imageFile.CopyToAsync(stream);
-            }
-
-            var imageUrl = filePath.Replace("D:/JoyceNguyenContactLens", "").Replace("\\", "/");
-            return await contactLensRepository.AddImageAsync(contactLensId, imageUrl);
+            return await contactLensRepository.AddImageAsync(contactLensId, imageFile);
         }
 
         public async Task<bool> ReplaceContactLensImages(

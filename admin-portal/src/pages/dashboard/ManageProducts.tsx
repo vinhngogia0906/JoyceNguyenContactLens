@@ -10,9 +10,6 @@ import ProductDialog from "../../components/ProductDialog";
 
 const ManageProducts = () => {
   const { loading, error, data } = useQuery(GET_CONTACT_LENS);
-  const [createProduct] = useMutation(CREATE_CONTACT_LENS, {
-    refetchQueries: [{ query: GET_CONTACT_LENS }]
-  });
   const [selectedProduct, setSelectedProduct] = useState<ContactLens>({
     id: '00000000-00000000-00000000-00000000-00000000',
     name: '',
@@ -37,7 +34,7 @@ const ManageProducts = () => {
   };
 
   const handleSelectedProductRefresh = (newProduct: ContactLens) => {
-    setSelectedProduct(new)
+    setSelectedProduct(newProduct);
   }
 
   if (loading) return <CircularProgress />;
@@ -104,7 +101,6 @@ const ManageProducts = () => {
         product={selectedProduct}
         onClose={() => setOpenProductDialog(false)}
         onProductUpdated={handleProductCreated}
-        onSelectedProductRefresh={}
       />
     </Box>
   );
